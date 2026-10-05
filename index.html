@@ -6,14 +6,19 @@
 <title>O-LIV | Téléphones fonctionnels Afrique de l'Ouest</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial, sans-serif;}
-body{background-color:#f7f7f7;color:#222;}
+body{background:#f7f7f7;color:#222;}
 header{background:#222;color:#fff;text-align:center;padding:32px 16px;}
 h1{font-size:44px;margin-bottom:8px;}
 header p{font-size:19px;opacity:0.9;}
 .container{max-width:1200px;margin:40px auto;padding:0 20px;}
-.product-card{background:#ffffff;border-radius:14px;padding:26px;margin-bottom:32px;}
-.product-card img{width:100%;height:auto;border-radius:8px;display:block;}
-.product-title{font-size:30px;text-align:center;margin-bottom:20px;color:#111;}
+.product-card{background:#fff;border-radius:14px;padding:26px;margin-bottom:32px;display:flex;gap:30px;align-items:center;flex-wrap:wrap;}
+.product-img{flex:1;min-width:400px;}
+.product-img img{width:100%;height:auto;border-radius:8px;}
+.product-desc{flex:1;min-width:350px;}
+.product-desc h2{font-size:30px;margin-bottom:20px;}
+.product-desc ul{list-style:none;}
+.product-desc li{font-size:18px;margin:12px 0;}
+.product-desc li::before{content:"✅ ";}
 </style>
 </head>
 <body>
@@ -21,19 +26,21 @@ header p{font-size:19px;opacity:0.9;}
     <h1>O-LIV</h1>
     <p>Téléphones fonctionnels de qualité pour l'Afrique de l'Ouest</p >
 </header>
-
 <div class="container">
-    <!-- 第一款 O-17 Pro -->
+    <!-- O-17 Pro -->
     <div class="product-card">
-        <h2 class="product-title">O-LIV O-17 Pro</h2>
-        < img src="oliv-o17pro.jpg" alt="O-LIV O-17 Pro affiche produit">
+        <div class="product-img">
+            < img src="oliv-o17pro.jpg" alt="O-LIV O-17 Pro">
+        </div>
+        <div class="product-desc">
+            <h2>O-LIV O-17 Pro</h2>
+            <ul>
+                <li>Dual SIM</li>
+                <li>Batterie 2000 mAh</li>
+                <li>Écran HD 2.8 pouces</li>
+                <li>Haut-parleur FM puissant</li>
+                <li>Port Type-C</li>
+                <li>King Voice : Annonce vocale</li>
+            </ul>
+        </div>
     </div>
-
-    <!-- 第二款 O-5619 -->
-    <div class="product-card">
-        <h2 class="product-title">O-LIV O-5619</h2>
-        < img src="oliv-o5619.jpg" alt="O-LIV O-5619 affiche produit">
-    </div>
-</div>
-</body>
-</html>
