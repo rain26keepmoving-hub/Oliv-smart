@@ -3,47 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O-LIV</title>
+<title>O-LIV | Téléphones fonctionnels Afrique de l'Ouest</title>
 <style>
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+}
+
+body {
   background: #f7f7f7;
   color: #222;
 }
+
 header {
   background: #222;
   color: #fff;
   text-align: center;
   padding: 30px 16px;
 }
+
 h1 {
-  font-size: 40px;
-  margin: 0 0 8px;
+  font-size: 42px;
+  margin-bottom: 8px;
 }
+
 .subtitle {
   font-size: 18px;
   opacity: 0.9;
 }
-.product {
-  background: #fff;
-  margin: 24px auto;
-  padding: 24px;
+
+.container {
   max-width: 1000px;
-  border-radius: 14px;
-  text-align: center;
+  margin: 32px auto;
+  padding: 0 16px;
 }
-h2 {
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.product-title {
   font-size: 28px;
-  margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 18px;
+  color: #111;
 }
-img {
+
+.product-image {
   width: 100%;
   max-width: 900px;
   height: auto;
   display: block;
-  margin: 0 auto;
-  border-radius: 8px;
+  margin: 0 auto 24px;
+  border-radius: 12px;
+}
+
+.specs-title {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #222;
+  border-left: 5px solid #d71920;
+  padding-left: 10px;
+}
+
+.specs-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px 20px;
+}
+
+.specs-list li {
+  background: #fafafa;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid #eee;
+}
+
+.specs-list li strong {
+  color: #d71920;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 16px;
+  color: #666;
+  font-size: 14px;
 }
 </style>
 </head>
@@ -54,15 +106,47 @@ img {
   <div class="subtitle">Téléphones fonctionnels de qualité pour l'Afrique de l'Ouest</div>
 </header>
 
-<div class="product">
-  <h2>O-LIV O-17 Pro</h2>
-  <img src="oliv-o17pro.jpg" alt="O-LIV O-17 Pro">
+<div class="container">
+
+  <!-- O-LIV O-17 Pro -->
+  <div class="product-card">
+    <h2 class="product-title">O-LIV O-17 Pro</h2>
+
+    < img class="product-image" src="oliv-o17pro.jpg" alt="O-LIV O-17 Pro">
+
+    <h3 class="specs-title">Caractéristiques principales</h3>
+    <ul class="specs-list">
+      <li><strong>Réseau :</strong> Dual SIM</li>
+      <li><strong>Batterie :</strong> 2000 mAh</li>
+      <li><strong>Écran :</strong> HD 2.8 pouces</li>
+      <li><strong>Audio :</strong> Haut-parleur FM puissant</li>
+      <li><strong>Port :</strong> Type-C</li>
+      <li><strong>Voix :</strong> King Voice, annonce vocale</li>
+    </ul>
+  </div>
+
+  <!-- O-LIV O-5619 -->
+  <div class="product-card">
+    <h2 class="product-title">O-LIV O-5619</h2>
+
+    < img class="product-image" src="oliv-o5619.jpg" alt="O-LIV O-5619">
+
+    <h3 class="specs-title">Caractéristiques principales</h3>
+    <ul class="specs-list">
+      <li><strong>Réseau :</strong> Trois cartes SIM</li>
+      <li><strong>Batterie :</strong> 3000 mAh grande capacité</li>
+      <li><strong>Écran :</strong> HD 2.4 pouces</li>
+      <li><strong>Design :</strong> Cadre métallique</li>
+      <li><strong>Port :</strong> Type-C</li>
+      <li><strong>Voix :</strong> King Voice, annonce vocale</li>
+    </ul>
+  </div>
+
 </div>
 
-<div class="product">
-  <h2>O-LIV O-5619</h2>
-  <img src="oliv-o5619.jpg" alt="O-LIV O-5619">
-</div>
+<footer>
+  &copy; 2026 O-LIV. Tous droits réservés.
+</footer>
 
 </body>
 </html>
