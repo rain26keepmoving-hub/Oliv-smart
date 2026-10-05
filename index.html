@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O-LIV Smart</title>
+<title>O-liv Smart</title>
 <style>
 * {
   box-sizing: border-box;
@@ -40,6 +40,37 @@ h1 {
   padding: 0 16px;
 }
 
+/* 优势板块样式 */
+.advantages-block{
+  background:#ffffff;
+  border-radius:16px;
+  padding:24px;
+  margin-bottom:32px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+.adv-title{
+  font-size:24px;
+  margin-bottom:18px;
+  color:#111;
+  text-align:center;
+}
+.adv-list{
+  list-style:none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+  gap:14px;
+}
+.adv-list li{
+  background:#fafafa;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid #eee;
+  font-size:16px;
+}
+.adv-list li strong{
+  color:#d71920;
+}
+
 .product-card {
   background: #fff;
   border-radius: 16px;
@@ -62,6 +93,18 @@ h1 {
   display: block;
   margin: 0 auto 24px;
   border-radius: 12px;
+}
+
+.image-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin:0 auto 24px;
+  max-width:900px;
+}
+.image-row img{
+  width:100%;
+  border-radius:12px;
 }
 
 .specs-title {
@@ -102,17 +145,33 @@ footer {
 <body>
 
 <header>
-  <h1>O-LIV</h1>
+  <h1>O-liv Smart</h1>
   <div class="subtitle">Téléphones fonctionnels de qualité pour l'Afrique de l'Ouest</div>
 </header>
 
 <div class="container">
 
+  <!-- 新增：Avantages 产品优势板块 -->
+  <div class="advantages-block">
+    <h2 class="adv-title">Nos Avantages</h2>
+    <ul class="adv-list">
+      <li><strong>Longue durée batterie</strong> : Grande autonomie pour zones rurales</li>
+      <li><strong>Multi-SIM</strong> : Prend en charge plusieurs cartes SIM</li>
+      <li><strong>Annonce vocale King Voice</strong> : Idéal pour les personnes âgées</li>
+      <li><strong>Haut-parleur FM puissant</strong> : Écoute radio sans casque</li>
+      <li><strong>Port Type-C</strong> : Charge rapide, câble universel</li>
+      <li><strong>Construction robuste</strong> : Conçu pour usage quotidien intensif</li>
+    </ul>
+  </div>
+
   <!-- O-LIV O-17 Pro -->
   <div class="product-card">
     <h2 class="product-title">O-LIV O-17 Pro</h2>
-
     <img class="product-image" src="oliv-o17pro.jpg" alt="O-LIV O-17 Pro">
+    <div class="image-row">
+      <img src="oliv-o17pro-detail1.jpg" alt="Détail O-LIV O-17 Pro">
+      <img src="oliv-o17pro-detail2.jpg" alt="Détail O-LIV O-17 Pro">
+    </div>
 
     <h3 class="specs-title">Caractéristiques principales</h3>
     <ul class="specs-list">
@@ -128,8 +187,11 @@ footer {
   <!-- O-LIV O-5619 -->
   <div class="product-card">
     <h2 class="product-title">O-LIV O-5619</h2>
-
     <img class="product-image" src="oliv-o5619.jpg" alt="O-LIV O-5619">
+    <div class="image-row">
+      <img src="oliv-o5619-detail1.jpg" alt="Détail O-LIV O-5619">
+      <img src="oliv-o5619-detail2.jpg" alt="Détail O-LIV O-5619">
+    </div>
 
     <h3 class="specs-title">Caractéristiques principales</h3>
     <ul class="specs-list">
@@ -145,7 +207,7 @@ footer {
 </div>
 
 <footer>
-  &copy; 2026 O-LIV. Tous droits réservés.
+  &copy; 2026 O-liv Smart. Tous droits réservés.
 </footer>
 
 </body>
